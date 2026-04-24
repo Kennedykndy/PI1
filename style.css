@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: url("https://static.tibia.com/images/global/backgrounds/bg.jpg")
+    no-repeat center top;
+  background-size: cover;
+  color: #000000;
+}
+
+/* TOPO */
+.topo {
+  background: #2b0f0f;
+  color: rgb(0, 217, 255);
+  text-align: center;
+  padding: 15px;
+  font-size: 24px;
+  border-bottom: 3px solid #002e49;
+}
+
+/* LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr 250px;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* MENU ESQUERDA */
+.menu-esquerda {
+  background: #ffffff;
+  padding: 10px;
+  border: 2px solid #ffffff;
+}
+
+.menu-esquerda button {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 8px;
+  background: rgb(102, 116, 247);
+  border: none;
+  cursor: pointer;
+}
+
+.menu-esquerda ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.menu-esquerda li {
+  padding: 5px;
+  border-bottom: 1px solid #ff0000;
+  cursor: pointer;
+}
+
+/* CONTEÚDO */
+.conteudo {
+  background: #f5e6c8;
+  padding: 10px;
+  border: 2px solid #a67c52;
+}
+
+.news-ticker {
+  background: #d4c29a;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.news h2 {
+  color: darkred;
+  margin-bottom: 10px;
+}
+
+.news img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* MENU DIREITA */
+.menu-direita .box {
+  background: #3a1c1c;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #a67c52;
+}
+
+.menu-direita button {
+  width: 100%;
+  padding: 8px;
+  background: gold;
+  border: none;
+  cursor: pointer;
+}
+
+.video {
+  height: 120px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
