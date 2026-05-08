@@ -2,119 +2,121 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Mentra</title>
+
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header class="topo">
-      <div class="logo">LOGO</div>
 
+  <body>
+    <!-- HEADER -->
+    <header class="topo">
+      <!-- LOGO -->
+      <div class="logo-area" id="logo-home">
+        <img src="logo.png" alt="Logo Mentra" class="logo-img" />
+      </div>
+
+      <!-- CENTRO -->
       <div class="center">
         <h1>MENTRA</h1>
+
         <p>Aqui você aprende tudo sobre jogos</p>
       </div>
 
+      <!-- LOGIN -->
       <div class="auth">
         <form class="login-form">
-          <input type="text" placeholder="Usuário" r />
-          <input type="password" placeholder="Senha" />
+          <input type="text" placeholder="Usuário" required />
+
+          <input type="password" placeholder="Senha" required />
+
           <button type="submit">Entrar</button>
         </form>
+
         <p class="no-account">
           Não tem conta?
-          <button class="criar-conta">Criar Aqui!</button>
+
+          <button type="button" class="criar-conta">Criar Aqui!</button>
         </p>
       </div>
     </header>
 
+    <!-- CONTAINER -->
     <div class="container">
-      <!-- MENU ESQUERDA -->
+      <!-- MENU ESQUERDO -->
       <aside class="menu-esquerda">
-        <nav>
-          <ul>
-            <li><h3>Estrutura do Guia:</h3></li>
-            <li>
-              <h4>Módulo 1:</h4>
-              Fundamentos
-            </li>
-            <li>
-              <h4>Módulo 2:</h4>
-              Consistência
-            </li>
-            <li>
-              <h4>Módulo 3:</h4>
-              Estratégia
-            </li>
-            <li>
-              <h4>Módulo 4:</h4>
-              Mentalidade Gamer
-            </li>
-            <li>
-              <h4>Módulo 5:</h4>
-              Evolução Rápida
-            </li>
-          </ul>
-        </nav>
+        <div class="menu-title">
+          <h3>ESTRUTURA DO GUIA</h3>
+        </div>
+
+        <ul>
+          <li class="modulo" data-modulo="1">⚔ MÓDULO 1: FUNDAMENTOS</li>
+
+          <li class="modulo" data-modulo="2">🛡 MÓDULO 2: CONSISTÊNCIA</li>
+
+          <li class="modulo" data-modulo="3">🏆 MÓDULO 3: ESTRATÉGIA</li>
+
+          <li class="modulo" data-modulo="4">🧠 MÓDULO 4: MENTALIDADE</li>
+
+          <li class="modulo" data-modulo="5">🔥 MÓDULO 5: EVOLUÇÃO</li>
+        </ul>
       </aside>
 
       <!-- CONTEÚDO -->
       <main class="conteudo">
-        <section class="news-ticker">
-          <p>Últimas notícias...</p>
-        </section>
+        <section class="news-ticker">🔊 Últimas notícias...</section>
 
-        <section class="news">
+        <section class="news" id="conteudo-modulo">
           <h2>Guia de estudos sobre jogos + passo a passo</h2>
 
-          <h3>O Jogador em Evolução:</h3>
-          <p>> Joga diariamente (mobile, PC ou Console);</p>
-          <p>> Consome conteúdo relacionado a jogos (YouTube, Twitch, etc);</p>
-          <p>> Participa de comunidades de jogos (Discord, Reddit, etc);</p>
-          <p>
-            > Quer melhorar, mas não sabe como treinar de forma estruturada;
+          <p class="intro-text">
+            Clique em um módulo no menu esquerdo para visualizar os estudos
+            específicos.
           </p>
 
-          <h3>Dores:</h3>
-          <p>> Fica Preso no mesmo nível/rank;</p>
-          <p>> Sente que "joga muito, mas não evolui";</p>
-          <p>> Perde para jogadores "menos habilidosos";</p>
-
-          <h3>Desejos:</h3>
-          <p>> Subir de rank rápido;</p>
-          <p>> Jogar como jogadores profissionais;</p>
-          <p>> Ser reconhecido por sua habilidade e desempenho;</p>
-          <p>> Dominar o jogo (não só jogar);</p>
-
-          <h3>Comportamento digital:</h3>
-          <p>> Assiste vídeos curtos com dicas rápidas;</p>
-          <p>> Salva conteúdo "tutorial";</p>
-          <p>> Compartilha hacks com amigos;</p>
-          <p>> Gosta de conteúdo direto ao ponto;</p>
-
           <img
-            src="https://static.tibia.com/images/global/news/springintolife.jpg"
-            alt=""
+            src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop"
+            alt="Imagem gamer"
           />
         </section>
       </main>
 
-      <!-- SIDEBAR DIREITA -->
+      <!-- SIDEBAR -->
       <aside class="menu-direita">
         <div class="box">
-          <h3>Webshop</h3>
-          <button>Get Tibia Coins</button>
+          <h3>WEBSHOP</h3>
+
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5341/5341720.png"
+            alt=""
+          />
+
+          <button>Loja</button>
         </div>
 
         <div class="box">
-          <h3>Trailer</h3>
+          <h3>TRAILER</h3>
+
           <div class="video">▶</div>
         </div>
 
         <div class="box">
-          <h3>Poll</h3>
+          <h3>POLL</h3>
+
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5957/5957125.png"
+            alt=""
+          />
+
           <button>Vote Now</button>
         </div>
       </aside>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
